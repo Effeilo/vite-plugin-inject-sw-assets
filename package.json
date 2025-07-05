@@ -1,0 +1,52 @@
+{
+"name": "vite-plugin-inject-sw-assets",
+  "version": "1.0.0",
+  "description": "A Vite plugin that injects static assets into a custom service worker for use with injectManifest (ideal for Workbox + vite-plugin-pwa setups).",
+  "author": "Effeilo",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "vite6",
+    "plugin",
+    "pwa",
+    "service-worker",
+    "injectManifest",
+    "workbox",
+    "precache",
+    "static-assets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Effeilo/vite-plugin-inject-sw-assets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Effeilo/vite-plugin-inject-sw-assets/issues"
+  },
+  "homepage": "https://github.com/Effeilo/vite-plugin-inject-sw-assets",
+  "peerDependencies": {
+    "vite": "^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "glob": "^11.0.3",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.2"
+  }
+}
