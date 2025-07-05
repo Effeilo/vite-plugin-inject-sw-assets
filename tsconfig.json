@@ -2,13 +2,13 @@
   "compilerOptions": {
     /* Language features & target */
     "target": "ES2020",
-    "module": "ESNext",
+    "module": "ESNext",      
     "moduleResolution": "Node",
     "lib": ["ES2020"],
 
     /* Output */
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": "src", 
     "declaration": true,
     "emitDeclarationOnly": false,
 
@@ -33,6 +33,6 @@
     /* Types included globally */
     "types": ["node"]
   },
-  "include": ["src"],
+  "include": ["src", "scripts"],
   "exclude": ["node_modules", "dist", "**/*.test.ts", "**/__tests__/**"]
 }

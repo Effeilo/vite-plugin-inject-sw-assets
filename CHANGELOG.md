@@ -15,6 +15,30 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 
 <br>
 
+## [1.0.2] – 2025-07-05
+
+### 🛠️ Fixed
+
+- All compiled `.js` files now include proper `.js` extensions in ESM `import` paths
+- Fixed `ERR_MODULE_NOT_FOUND` in Node.js ESM projects
+
+### 🔧 Added
+
+- Post-build script `scripts/fix-extensions.js` to rewrite relative imports in `dist/**/*.js`
+- Automatically adds `.js` extension to relative ESM imports like `import './utils/foo' → './utils/foo.js'`
+- Updated `build` script in `package.json` to run the patch after `tsc`
+
+### ✅ Improved
+
+- Removed the need for `"module": "NodeNext"` by post-processing import paths
+- Simplified ESM compatibility without changing development imports
+
+<br>
+
+---
+
+<br>
+
 ## [1.0.0] – 2025-07-05
 
 ### ✨ Added
